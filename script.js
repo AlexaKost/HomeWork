@@ -56,8 +56,3 @@ let result = (budgetDay >= 1200) ? 'У Вас высокий уровень до
              'Что-то пошло не так';
     console.log(result);
 };
-
-
-
-
-    
