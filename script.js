@@ -1,7 +1,6 @@
 'use strict';
 // 2 урок
 let isNumber = function(n) {
-    debugger
     return !isNaN(parseFloat(n)) && isFinite(n)
 };
 
