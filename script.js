@@ -1,7 +1,6 @@
 'use strict';
 // 2 урок
 let isNumber = function(n) {
-    debugger
     return !isNaN(parseFloat(n)) && isFinite(n)
 };
 
@@ -16,7 +15,7 @@ let start = function() {
     do {
         money = prompt('Ваш месячный доход?', 100000);
     } while (!isNumber(money)){
-        
+    
     }
 };
     
