@@ -152,3 +152,46 @@ appData.getInfoDeposit();
 console.log(appData.persentDeposit, appData.moneyDeposit, appData.calcSavedMoney());
 
 console.log(appData.addExpenses);
+
+// 9 урок
+const buttonCalc = document.getElementById('start');
+console.log(buttonCalc);
+
+const plusOne = document.getElementsByTagName('button')[0];
+console.log(plusOne);
+const pluseTwo = document.getElementsByTagName('button')[1];
+console.log(pluseTwo);
+
+const checkBox = document.querySelector('#deposit-check');
+console.log(checkBox);
+const additionalIncome = document.querySelectorAll('.additional_income-item');
+console.log(additionalIncome);
+
+const budgetDayVal = document.getElementsByClassName('result-total')[1];
+console.log(budgetDayVal);
+const expensesMonthVal = document.getElementsByClassName('result-total')[2];
+console.log(expensesMonthVal);
+const additionalIncomeVal = document.getElementsByClassName('result-total')[3];
+console.log(additionalIncomeVal);
+const additionalExpensesVal = document.getElementsByClassName('result-total')[4];
+console.log(additionalExpensesVal);
+const incomePeriodVal = document.getElementsByClassName('result-total')[5];
+console.log(incomePeriodVal);
+const targetMonthVal = document.getElementsByClassName('result-total')[6];
+console.log(targetMonthVal);
+
+const expensesTitle = document.querySelector('.expenses-title');
+console.log(expensesTitle);
+const expensesAmount = document.querySelector('.expenses-amount');
+console.log(expensesAmount);
+const additionalExpensesItem = document.querySelector('.additional_expenses-item');
+console.log(additionalExpensesItem);
+const depositAmount = document.querySelector('.deposit-amount');
+console.log(depositAmount);
+const depositPersent = document.querySelector('.deposit-percent');
+console.log(depositPersent);
+const targetAmount = document.querySelector('.target-amount');
+console.log(targetAmount);
+const periodSelect = document.querySelector('.period-select');
+console.log(periodSelect);
+
