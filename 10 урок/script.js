@@ -46,20 +46,11 @@ const books = document.querySelectorAll('.books'),
 document.body.style.backgroundImage = 'url(image/you-dont-know-js.jpg)';
        
 
-
-        //console.log(nameBook[4].textContent);
-        // nameBook[4].replaceWith('title');
-        //newNameBook.textContent = 'Книга 3. this и Прототипы Объектов';
-        //nameBook[4].append(newNameBook);
-        //nameBook[4].remove(); - это безуспешные попытки поменять название 3 книги
-       
-
-        
         nameBook[4].classList.add('newNameBook');
-        nameBook[4].innerHTML = 'Книга 3. this и Прототипы Объектов';
+        nameBook[4].querySelector('a').innerHTML = 'Книга 3. this и Прототипы Объектов';
 
         newChapter.textContent = 'Глава 8: За пределами ES6';
         unList[5].append(newChapter);
         list[26].before(newChapter);
 
-        advertisement.classList.remove('adv');
+        advertisement.remove();
