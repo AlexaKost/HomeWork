@@ -4,8 +4,8 @@
 const buttonCalc = document.getElementById('start');
 console.log(buttonCalc);
 
-const pluseOne = document.getElementsByTagName('button')[0];
-console.log(pluseOne);
+const plusOne = document.getElementsByTagName('button')[0];
+console.log(plusOne);
 const pluseTwo = document.getElementsByTagName('button')[1];
 console.log(pluseTwo);
 
@@ -14,17 +14,17 @@ console.log(checkBox);
 const additionalIncome = document.querySelectorAll('.additional_income-item');
 console.log(additionalIncome);
 
-const budgetDayVal = document.getElementsByClassName('budget_day-value')[0];
+const budgetDayVal = document.getElementsByClassName('budget_day-value');
 console.log(budgetDayVal);
-const expensesMonthVal = document.getElementsByClassName('expenses_month-value')[0];
+const expensesMonthVal = document.getElementsByClassName('expenses_month-value');
 console.log(expensesMonthVal);
-const additionalIncomeVal = document.getElementsByClassName('additional_income-value')[0];
+const additionalIncomeVal = document.getElementsByClassName('additional_income-value');
 console.log(additionalIncomeVal);
-const additionalExpensesVal = document.getElementsByClassName('additional_expenses-value')[0];
+const additionalExpensesVal = document.getElementsByClassName('additional_expenses-value');
 console.log(additionalExpensesVal);
-const incomePeriodVal = document.getElementsByClassName('income_period-value')[0];
+const incomePeriodVal = document.getElementsByClassName('income_period-value');
 console.log(incomePeriodVal);
-const targetMonthVal = document.getElementsByClassName('target_month-value')[0];
+const targetMonthVal = document.getElementsByClassName('target_month-value');
 console.log(targetMonthVal);
 
 const expensesTitle = document.querySelector('.expenses-items .expenses-title');
@@ -42,7 +42,3 @@ console.log(targetAmount);
 const periodSelect = document.querySelector('.period .period-select');
 console.log(periodSelect);
 
-const salaryAmount = document.querySelector('.salary .salary-amount');
-console.log(salaryAmount); // Месячный доход
-const resultTotal = document.querySelector('. .result-total');
-console.log(resultTotal); // Доходы за месяц
