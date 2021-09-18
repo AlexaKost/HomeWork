@@ -43,8 +43,16 @@ let appData = {
     deposit: false, // депозит
     persentDeposit: 0,
     moneyDeposit: 0,  
-
+    check: function () {
+        if (salaryAmount.value !== '') {
+            start.removeAttribute('disabled');
+        }
+      },
     start: function() {
+        if (salaryAmount.value === '') {
+            start.setAttribute('disabled', 'true');
+            return;
+        }
         
         this.budget = +salaryAmount.value;
 
@@ -107,7 +115,9 @@ let appData = {
        additionalExpensesValue.value = this.addExpenses.join(', '); 
        additionalIncomeValue.value = this.addIncome.join(', '); 
        targetMonthValue.value = this.getTargetMonth();
-       periodSelect.addEventListener('input', function(){
+       incomePeriodValue.value = this.calcPeriod();
+
+       periodSelect.addEventListener('change', function(){
             periodAmount.innerHTML = periodSelect.value;
             incomePeriodValue.value = _this.calcPeriod();
         });  
@@ -173,8 +183,6 @@ let appData = {
     }
        
    },
-   
-   //getRangePeriod(){
        
    
    getAddExpenses: function(){
@@ -247,10 +255,11 @@ cancel.addEventListener('click', appData.cancel.bind(appData));
 
 expensesPlus.addEventListener('click', appData.addExpensesBlock);
 incomePlus.addEventListener('click', appData.addIncomeBlock);
-periodSelect.addEventListener('input', function(){
+periodSelect.addEventListener('change', function(){
     periodAmount.innerHTML = periodSelect.value;
 });
 start.disabled = true;
+
 salaryAmount.addEventListener('input', function(){
     // if (salaryAmount.value === '')
     //     start.disabled = true
